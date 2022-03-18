@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
+  
   devise_for :users, :controllers =>{
     :registrations => 'users/registrations',
     :sessions => 'users/sessions',
     :passwords => 'users/passwords',
-    :confimations => 'users/confimations',
+    :confirmations => 'users/confirmations',
     :unlocks => 'users/unlocks',
   }
   
@@ -14,6 +15,9 @@ Rails.application.routes.draw do
     get "login", :to => "users/sessions#new"
     delete "logout", :to => "users/sessions#destroy"
   end
-  resources :products
+    resources :products do
+      resources :reviews, only: [:create]
+    end
+    
  
 end
