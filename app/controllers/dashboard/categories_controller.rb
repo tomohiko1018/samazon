@@ -6,6 +6,7 @@ class Dashboard::CategoriesController < ApplicationController
   def index
     @categories = Category.display_list(params[:page])
     @category = Category.new
+    @major_categories = MajorCategory.all
   end
   
   def create
@@ -13,7 +14,9 @@ class Dashboard::CategoriesController < ApplicationController
     category.save
     redirect_to dashboard_categories_path
   end
+  
   def edit
+    @major_categories = MajorCategory.all
   end
   
   def update
@@ -33,6 +36,6 @@ class Dashboard::CategoriesController < ApplicationController
     end
     
     def category_params
-      params.require(:category).permit(:name,:desscription,:major_category_name)
+      params.require(:category).permit(:name,:desscription,:major_category_name,:major_category_id)
     end
 end
