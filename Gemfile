@@ -96,3 +96,5 @@ group :development do
   gem 'capistrano-rbenv'
   gem 'capistrano-rbenv-vars'
 end
+
+gem 'sqlite3'
