@@ -97,3 +97,4 @@ group :development do
   gem 'capistrano-rbenv-vars'
 end
 
+gem 'mysql2', '0.4.10'
