@@ -107,6 +107,10 @@ GEM
     capistrano-rbenv-vars (0.1.0)
       capistrano (>= 3.0)
       capistrano-rbenv (>= 2.0)
+    capistrano3-puma (5.2.0)
+      capistrano (~> 3.7)
+      capistrano-bundler
+      puma (>= 4.0, < 6.0)
     capybara (3.36.0)
       addressable
       matrix
@@ -338,6 +342,7 @@ DEPENDENCIES
   capistrano-rails
   capistrano-rbenv
   capistrano-rbenv-vars
+  capistrano3-puma
   capybara (>= 2.15)
   chromedriver-helper
   coffee-rails (~> 4.2)
