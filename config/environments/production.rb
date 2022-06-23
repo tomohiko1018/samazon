@@ -25,6 +25,7 @@ Rails.application.configure do
   # Compress JavaScripts and CSS.
   config.assets.js_compressor = Uglifier.new(harmony: true)
   config.action_controller.asset_host = "http:/aws-samazon.s3.amazonaws.com"
+  config.asset_host=Rails.application.credentials.dig(:aws, :s3_host)
   # config.assets.css_compressor = :sass
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.

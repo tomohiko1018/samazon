@@ -105,3 +105,5 @@ end
 
 gem 'asset_sync'
 gem 'fog-aws'
+
+gem 'webpacker'
