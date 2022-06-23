@@ -102,3 +102,6 @@ gem 'mysql2', '0.4.10'
 group :development do
   gem 'capistrano3-puma',    require: false
 end
+
+gem 'asset_sync'
+gem 'fog-aws'
