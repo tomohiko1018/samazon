@@ -8,6 +8,8 @@ if defined?(AssetSync)
     config.aws_secret_access_key = ENV['AWS_SECRET_ACCESS_KEY']
     config.aws_session_token = ENV['AWS_SESSION_TOKEN'] if ENV.key?('AWS_SESSION_TOKEN')
     config.fog_region = 'ap-northeast-1'
+    
+    config.existing_remote_files = 'keep'
    
      config.run_on_precompile = false
     config.add_local_file_paths do
