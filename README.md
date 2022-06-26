@@ -9,6 +9,6 @@
 #### githubからgitcloneしてwebサーバーにはNginx、アプリケーションサーバーにpumaを使用し、Ec2にダウンロードしました。
 
 # Route53でドメイン取得
-<img width="714" alt="スクリーンショット 2022-06-24 1 33 03" src="https://user-images.githubusercontent.com/98261861/175798648-064ea24b-3161-4692-b35a-d63ed13842e4.png">
 
-#### Route53とALBを使用してhttps://　のドメイン取得を行いました。
+
+#### Route53とALBを使用して"https://aws-samazon1018.comの"ドメイン取得を行いました。
