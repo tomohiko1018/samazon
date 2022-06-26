@@ -12,4 +12,4 @@
 
 <img width="716" alt="スクリーンショット 2022-06-27 4 01 11" src="https://user-images.githubusercontent.com/98261861/175829987-b234c612-97c6-4d3f-953f-22aa2dcc8657.png">
 
-#### Route53とALBとACを使用して"https://aws-samazon1018.com" の ドメイン取得を行いました。
+#### Route53とALBとACMを使用して"https://aws-samazon1018.com" の ドメイン取得を行いました。
